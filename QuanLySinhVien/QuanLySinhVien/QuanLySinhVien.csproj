@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{0100FEA4-0C5C-4CB4-B140-721CCE0627A9}</ProjectGuid>
+        <OutputType>WinExe</OutputType>
+        <RootNamespace>QuanLySinhVien</RootNamespace>
+        <AssemblyName>QuanLySinhVien</AssemblyName>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <FileAlignment>512</FileAlignment>
+        <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <Deterministic>true</Deterministic>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>full</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>bin\Debug\</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>pdbonly</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>bin\Release\</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Xml.Linq" />
+        <Reference Include="System.Data.DataSetExtensions" />
+        <Reference Include="Microsoft.CSharp" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Deployment" />
+        <Reference Include="System.Drawing" />
+        <Reference Include="System.Net.Http" />
+        <Reference Include="System.Windows.Forms" />
+        <Reference Include="System.Xml" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="AddNewClass.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="AddNewClass.Designer.cs">
+          <DependentUpon>AddNewClass.cs</DependentUpon>
+        </Compile>
+        <Compile Include="AddNewStudent.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="AddNewStudent.Designer.cs">
+          <DependentUpon>AddNewStudent.cs</DependentUpon>
+        </Compile>
+        <Compile Include="EditClass.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="EditClass.Designer.cs">
+          <DependentUpon>EditClass.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Properties\Dao\ProcessManagement.cs" />
+        <Compile Include="Properties\Model\ClassRoom.cs" />
+        <Compile Include="Properties\Model\Student.cs" />
+        <Compile Include="QuanLySinhVien.cs">
+            <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="QuanLySinhVien.Designer.cs">
+            <DependentUpon>QuanLySinhVien.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Program.cs" />
+        <EmbeddedResource Include="AddNewClass.resx">
+          <DependentUpon>AddNewClass.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="AddNewStudent.resx">
+          <DependentUpon>AddNewStudent.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="EditClass.resx">
+          <DependentUpon>EditClass.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Properties\Resources.resx">
+            <Generator>ResXFileCodeGenerator</Generator>
+            <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+            <SubType>Designer</SubType>
+        </EmbeddedResource>
+        <Compile Include="Properties\Resources.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Resources.resx</DependentUpon>
+        </Compile>
+        <EmbeddedResource Include="QuanLySinhVien.resx">
+          <DependentUpon>QuanLySinhVien.cs</DependentUpon>
+        </EmbeddedResource>
+        <None Include="Properties\Settings.settings">
+            <Generator>SettingsSingleFileGenerator</Generator>
+            <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+        </None>
+        <Compile Include="Properties\Settings.Designer.cs">
+            <AutoGen>True</AutoGen>
+            <DependentUpon>Settings.settings</DependentUpon>
+            <DesignTimeSharedInput>True</DesignTimeSharedInput>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="App.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="tsconfig.json" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

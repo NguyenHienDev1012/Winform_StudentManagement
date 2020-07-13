@@ -1,0 +1,13 @@
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe.config
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.exe
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\bin\Debug\QuanLySinhVien.pdb
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csprojAssemblyReference.cache
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.Properties.Resources.resources
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.GenerateResource.cache
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.csproj.CoreCompileInputs.cache
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.exe
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.pdb
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.AddNewClass.resources
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.AddNewStudent.resources
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.EditClass.resources
+C:\Users\PC\RiderProjects\QuanLySinhVien\QuanLySinhVien\obj\Debug\QuanLySinhVien.QuanLySinhVien.resources
