@@ -48,7 +48,6 @@ namespace QuanLySinhVien
             {
                 Student student =new Student(idSV, nameSV, genderSV, addressSV, classID, phone);
                 classRoom= qlsv._processManagement.getClassRoom(this.tbxClassIdTranfer.Text);
-                MessageBox.Show(this.tbxClassIdTranfer.Text);
                 classRoom.addStudent(student);
                 qlsv.getDataGridView().Rows.Clear();
                 qlsv.getDataGridView().Refresh();

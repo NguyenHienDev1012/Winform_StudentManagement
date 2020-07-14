@@ -514,22 +514,49 @@ namespace QuanLySinhVien
             string genderStudent = this._tbxEditDob.Text;
             string addressStudent = this._tbxEditAddress.Text;
             string classId = this._tbxEditClassID.Text;
-            int phoneStudent = Int32.Parse(_tbxEditPhoneNuber.Text);
-            ClassRoom classRoom = _processManagement.getClassRoom(classId);
-            Student s = new Student(idStudent, nameStudent, genderStudent, addressStudent, classId,phoneStudent);
-            bool isEdited= classRoom.editStudent(s);
-            if (isEdited)
+            int phoneStudent = 0;
+            try
             {
-                MessageBox.Show("Edited successfully.");
-                this.dataGridViewStudents.Rows.Clear();
-                this.dataGridViewStudents.Refresh();
-                drawDataGridView(classRoom,0);
+                phoneStudent = Int32.Parse(this._tbxEditPhoneNuber.Text);  
+            }
+            catch
+            {
+                MessageBox.Show("Error format phone number");
+
+            }
+
+            if (idStudent =="" || nameStudent== "" || genderStudent =="" || addressStudent == "" || classId== "" || phoneStudent == 0)
+            {
+                MessageBox.Show("Enter all fields are required.");
             }
             else
             {
-                MessageBox.Show("Edited fail. Try again.");
+                ClassRoom classRoom = _processManagement.getClassRoom(classId);
+                Student s = new Student(idStudent, nameStudent, genderStudent, addressStudent, classId, phoneStudent);
+                bool isEdited = classRoom.editStudent(s);
+
+                if (isEdited)
+                {
+                    MessageBox.Show("Edited successfully.");
+                    this.dataGridViewStudents.Rows.Clear();
+                    this.dataGridViewStudents.Refresh();
+                    _tbxEditIdSV.Enabled = false;
+                    _tbxEditNameSV.Enabled = false;
+                    _tbxEditDob.Enabled = false;
+                    _tbxEditAddress.Enabled = false;
+                    _tbxEditClassID.Enabled = false;
+                    _tbxEditPhoneNuber.Enabled = false;
+
+
+                    drawDataGridView(classRoom, 0);
+
+                }
+
+                else
+                {
+                    MessageBox.Show("Edited fail. Try again.");
+                }
             }
-                
 
 
         }

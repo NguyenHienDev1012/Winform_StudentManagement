@@ -42,7 +42,7 @@ namespace QuanLySinhVien
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             resources.ApplyResources(this.label1, "label1");
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label1.Name = "label1";
@@ -116,7 +116,7 @@ namespace QuanLySinhVien
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Controls.Add(this.panelEnd);
             this.Controls.Add(this.panelAction);
             this.Controls.Add(this.flPanelClasses);
